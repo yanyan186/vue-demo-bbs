@@ -1,0 +1,41 @@
+@gray: #999;
+.clear {
+    &:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+#app {
+    ul {
+        float: left;
+        margin-left: 10px;
+    }
+    .path {
+        margin-left: 200px;
+        height: 24px;
+        line-height: 24px;
+    }
+    li {
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 10px;
+        &:last-child {
+            border-right: 0 none;
+        }
+        a {
+            color: @gray;
+            border-bottom: #a0a0a0 solid 1px;
+        }
+    }
+
+}
